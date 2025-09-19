@@ -111,7 +111,11 @@ export const MatcherView: React.FC<MatcherViewProps> = ({ allTherapists }) => {
 
     const handleFindMatch = async () => {
         if (!newCase.address || !newCase.requiredHours) {
-            alert("Please fill in the new case details.");
+            alert("Please fill in the new case details, including address and required hours.");
+            return;
+        }
+        if (newCase.availability.length === 0) {
+            alert("Please select the new case's availability on the calendar before searching.");
             return;
         }
         setIsLoading(true);
