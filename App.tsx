@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { SchedulerView } from './components/SchedulerView';
-import { MatcherView } from './components/MatcherView';
-import { useLocalStorage } from './hooks/useLocalStorage';
-import { type Therapist } from './types';
-import { generateSeedData } from './services/seed';
+import { SchedulerView } from './components/SchedulerView.tsx';
+import { MatcherView } from './components/MatcherView.tsx';
+import { useLocalStorage } from './hooks/useLocalStorage.ts';
+import { type Therapist } from './types.ts';
+import { generateSeedData } from './services/seed.ts';
 
 enum View {
   Scheduler,

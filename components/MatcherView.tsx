@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { type Therapist, type TimeSlot, type NewCaseInfo, type MatchResult } from '../types';
-import { getCoordinates, calculateDistance } from '../services/geoService';
-import { MatcherResults } from './MatcherResults';
-import { DAYS_OF_WEEK, HOURS_OF_DAY, TIME_SLOTS_PER_HOUR } from '../constants';
-import { PlusIcon } from './icons';
+import { type Therapist, type TimeSlot, type NewCaseInfo, type MatchResult } from '../types.ts';
+import { getCoordinates, calculateDistance } from '../services/geoService.ts';
+import { MatcherResults } from './MatcherResults.tsx';
+import { DAYS_OF_WEEK, HOURS_OF_DAY, TIME_SLOTS_PER_HOUR } from '../constants.ts';
+import { PlusIcon } from './icons.tsx';
 
 interface MatcherViewProps {
   allTherapists: Therapist[];

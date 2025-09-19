@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { type Therapist, type TimeSlot, type Case } from '../types';
-import { DAYS_OF_WEEK, HOURS_OF_DAY, TIME_SLOTS_PER_HOUR, CASE_BORDER_COLORS } from '../constants';
-import { TrashIcon } from './icons';
+import { type Therapist, type TimeSlot, type Case } from '../types.ts';
+import { DAYS_OF_WEEK, HOURS_OF_DAY, TIME_SLOTS_PER_HOUR, CASE_BORDER_COLORS } from '../constants.ts';
+import { TrashIcon } from './icons.tsx';
 
 interface WeeklyCalendarProps {
   therapists: Therapist[];

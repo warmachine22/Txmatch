@@ -1,10 +1,9 @@
-
 import React, { useState, useMemo } from 'react';
-import { type Therapist, type Case } from '../types';
-import { WeeklyCalendar } from './WeeklyCalendar';
-import { TherapistManager } from './TherapistManager';
-import { CaseModal } from './CaseModal';
-import { CASE_COLORS, CASE_BORDER_COLORS } from '../constants';
+import { type Therapist, type Case } from '../types.ts';
+import { WeeklyCalendar } from './WeeklyCalendar.tsx';
+import { TherapistManager } from './TherapistManager.tsx';
+import { CaseModal } from './CaseModal.tsx';
+import { CASE_COLORS, CASE_BORDER_COLORS } from '../constants.ts';
 
 interface SchedulerViewProps {
   therapists: Therapist[];

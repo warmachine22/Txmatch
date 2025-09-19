@@ -1,5 +1,4 @@
-
-import { type GeoCoordinates } from '../types';
+import { type GeoCoordinates } from '../types.ts';
 
 const geoCache = new Map<string, GeoCoordinates | null>();
 
@@ -13,7 +12,12 @@ export const getCoordinates = async (address: string): Promise<GeoCoordinates | 
   const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&limit=1`;
   
   try {
-    const response = await fetch(url);
+    // A User-Agent is required by Nominatim's usage policy.
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'TherapistSchedulerApp/1.0'
+      }
+    });
     if (!response.ok) {
       console.error('Nominatim API request failed');
       geoCache.set(address, null);

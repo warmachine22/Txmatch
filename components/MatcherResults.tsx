@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { type MatchResult } from '../types';
+import { type MatchResult } from '../types.ts';
 
 interface MatcherResultsProps {
   results: MatchResult[];

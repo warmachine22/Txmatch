@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { type Therapist } from '../types';
-import { UserPlusIcon, TrashIcon } from './icons';
+import { type Therapist } from '../types.ts';
+import { UserPlusIcon, TrashIcon } from './icons.tsx';
 
 interface TherapistManagerProps {
   therapists: Therapist[];

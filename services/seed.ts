@@ -1,5 +1,5 @@
-import { type Therapist, type Case, type TimeSlot } from '../types';
-import { CASE_COLORS } from '../constants';
+import { type Therapist, type Case, type TimeSlot } from '../types.ts';
+import { CASE_COLORS } from '../constants.ts';
 
 const therapistNames = [
   "Dr. Eleanor Vance", "Dr. John Montague", "Dr. Theodora Justina", "Dr. Luke Sanderson",
