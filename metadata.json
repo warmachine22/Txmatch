@@ -1,0 +1,5 @@
+{
+  "name": "Therapist Scheduler & Matcher",
+  "description": "An application for home-based early intervention therapists in New York to manage their schedules and find the best-fitting therapist for new cases based on availability, location, and workload.",
+  "requestFramePermissions": []
+}
